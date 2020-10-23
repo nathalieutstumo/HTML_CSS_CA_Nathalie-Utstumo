@@ -1,0 +1,4 @@
+footer {
+  display: grid;
+  grid-template-areas: "grid__index4 grid__index4 grid__index4 grid__index4";
+}
