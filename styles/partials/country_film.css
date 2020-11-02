@@ -4,9 +4,9 @@ main {
   background-color: #dd9335;
 }
 
-.main__grid {
+.country--main__grid {
   display: grid;
-  grid-template-columns: 130vh 100vh;
+  grid-template-columns: 120vh 70vh;
   grid-template-rows: 112vh;
   position: relative;
 }
@@ -23,8 +23,9 @@ main {
   display: grid;
   background-image: url("../../img/country_film.png");
   background-repeat: no-repeat;
-  margin-top: 35px;
-  margin-left: 105px;
+  margin-top: 55px;
+  margin-left: 60px;
+  background-size: contain;
 }
 
 .play__overlay {
@@ -32,7 +33,7 @@ main {
   grid-row: 1/2;
   grid-column: 1/2;
   justify-content: center;
-  margin-top: 190px;
+  margin-top: 160px;
 }
 
 .film--info__grid {
@@ -48,7 +49,7 @@ main {
   width: 450px;
   height: 475px;
   background-color: white;
-  margin-top: 55px;
+  margin-top: 65px;
   margin-left: 75px;
   border-radius: 42px;
 }

@@ -123,3 +123,19 @@ ul {
   text-decoration: none;
   color: #dd9335;
 }
+
+@media (max-width: 2003px) {
+  /* desktop */
+}
+
+@media (max-width: 1900px) {
+  /* desktop */
+}
+
+@media (max-width: 1850px) {
+  /* desktop */
+}
+
+@media (max-width: 1750px) {
+  /* desktop */
+}

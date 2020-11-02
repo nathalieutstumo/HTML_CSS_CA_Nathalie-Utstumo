@@ -46,7 +46,7 @@ header {
   justify-content: space-around;
   position: absolute;
   letter-spacing: 2px;
-  left: -90px;
+  left: -80px;
   bottom: 0px;
 }
 
@@ -54,7 +54,7 @@ header {
   color: #dd9335;
   font-size: 1.5rem;
   position: absolute;
-  left: 110px;
+  left: 99px;
   top: 7px;
 }
 

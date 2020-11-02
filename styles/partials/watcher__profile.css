@@ -1,0 +1,144 @@
+.profile__grid {
+  display: grid;
+  grid-template-rows: 95vh;
+  grid-template-columns: 100vh 100vh;
+  /* border: red solid 3px; */
+}
+
+.profile--head__box {
+  display: grid;
+  grid-row: 1/1;
+  grid-column: 1/1;
+  width: 200px;
+  height: 50px;
+  background-color: #dd9335;
+  border-radius: 42px;
+  z-index: 20;
+  margin-top: 40px;
+  margin-left: 185px;
+}
+
+.profile--text__first {
+  font-family: neuronAngeledXB;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.profile--text__second {
+  font-family: neuronAngeledXL;
+  font-size: 2rem;
+  margin-top: -62px;
+  margin-left: 100px;
+}
+
+.profile--info__box {
+  display: grid;
+  grid-row: 1/1;
+  grid-column: 1/1;
+  width: 375px;
+  height: 500px;
+  background-color: white;
+  border-radius: 42px;
+  margin-left: 100px;
+  margin-top: 65px;
+}
+
+.profile--photo__box {
+  border: #dd9335 3px solid;
+  width: 200px;
+  height: 160px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.profile--photo__icon {
+  font-size: 6rem;
+  margin-left: 55px;
+  margin-top: 28px;
+}
+
+.profile__type {
+  margin-top: -100px;
+  margin-left: 130px;
+}
+
+.watcher--type__first {
+  font-family: neuronAngeledXB;
+  font-size: 1.7rem;
+  color: #dd9335;
+}
+
+.watcher--type__second {
+  font-family: neuronAngeledXL;
+  font-size: 1.7rem;
+  color: #dd9335;
+  margin-left: 58px;
+  margin-top: -57px;
+}
+
+.profile--name__box {
+  width: 250px;
+  height: 40px;
+  border: #dd9335 solid 3px;
+  border-radius: 42px;
+  margin-top: -110px;
+  margin-left: 55px;
+}
+
+.profile--name__text {
+  margin-left: 20px;
+  margin-top: -17px;
+}
+
+.watcher--first__name {
+  font-family: neuronAngeledXB;
+  font-size: 1.5rem;
+  color: #dd9335;
+}
+
+.watcher--last__name {
+  font-family: neuronAngeledXL;
+  font-size: 1.5rem;
+  color: #dd9335;
+  margin-left: 55px;
+  margin-top: -51px;
+}
+
+.description__box input {
+  width: 240px;
+  height: 50px;
+  border: #dd9335 solid 3px;
+  margin-top: 20px;
+}
+
+.your--creations__box {
+  width: 400px;
+  height: 50px;
+  background-color: #dd9335;
+  border-radius: 42px;
+  margin-left: 100px;
+  margin-top: 40px;
+  position: absolute;
+}
+
+.rented--first__text {
+  font-family: neuronAngeledXB;
+  font-size: 2rem;
+  color: black;
+  margin-left: 85px;
+  margin-top: 7px;
+}
+
+.rented--second__text {
+  font-family: neuronAngeledXL;
+  font-size: 2rem;
+  color: black;
+  margin-left: 200px;
+  margin-top: -62px;
+}
+
+.creation--film__cover {
+  margin-top: 110px;
+  margin-left: 90px;
+}

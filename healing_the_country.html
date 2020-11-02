@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -29,8 +29,8 @@
             </button>
             <div class="dropdown__content">
               <a href="search.html"><i class="fas fa-search"></i></a>
-              <a href="#"><i class="fas fa-user"></i></a>
-              <a href="#"><i class="fas fa-film"></i></a>
+              <a href="create__account.html"><i class="fas fa-user"></i></a>
+              <a href="library.html"><i class="fas fa-film"></i></a>
               <a href="#"><i class="fas fa-share-square"></i></a>
             </div>
           </div>
@@ -39,14 +39,16 @@
     </header>
     <!--main-->
     <main>
-      <div class="main__grid">
+      <div class="country--main__grid">
         <div class="video--image__grid">
           <div class="video__image">
             <div class="play__overlay">
-              <a href="#"> <img src="img/play_icon.png" alt="Play icon"></a>
+              <a href="film.html"> <img src="img/play_icon.png" alt="Play icon"></a>
             </div>
           </div>
         </div>
+        <script src="js/purchase__overlay.js"></script>
+
         <div class="film--info__grid">
           <div class="film--info__box">
             <div class="film--info__text">
@@ -65,8 +67,67 @@
                   a sadistic British <br> officer 
                   murders his son.</h3>
             </div>
-            <a href="#"><button class="rent__button" type="button"> RENT FOR 5.99$ 
-            </button></a>
+
+            <!--overlay-->
+             
+             <div id="purchase__overlay"> 
+
+              <div class="purchase--overlay__box">
+
+                <div onclick="off()" class="exit"><i class="fas fa-times-circle"></i></div>
+          
+                  <h2 class="payment--first__text">PAYMENT</h2>
+                  <h2 class="payment--second__text">INFORMATION</h2>
+          
+          <div class="payment__choices">
+              <button class="mastercard--icon__button">
+                  <div class="mastercard__icon">
+                      <i class="fab fa-cc-mastercard"></i>
+                  </div>
+              </button>
+                  
+              
+          
+              <button class="paypal--icon__button">
+                  <div class="paypal__icon">
+                      <i class="fab fa-cc-paypal"></i>
+                  </div>
+              </button>
+                  
+            
+          
+              <button class="visa--icon__button">
+                  <div class="visa__icon">
+                      <i class="fab fa-cc-visa"></i>
+                  </div>
+              </button>
+                  
+             
+          </div>
+          
+                  <form action="submit.php" method="POST" id="checkout__form">
+          <input id="cardholdername" type="text" name="cardholdername" placeholder="CARDHOLDER NAME"/>
+          <input id="cardnumber" type="text" name="cardnumber" placeholder="CARD NUMBER"/>
+          <input id="expiredate" type="text" name="expiredate" placeholder="EXPIRE DATE"/>
+          <input id="cvv" type="text" name="cvv" placeholder="CVV">
+          
+                  </form>
+          
+                  <div class="rent--info__box">
+                      <h3 class="rent--info__movie">BEHIND YOU</h3>
+                      <h3 class="rent--movie__total">TOTAL</h3>
+                      <h3 class="rent--movie__price">5.99$</h3>
+                     <a href="/watcher__profile.html"> <button onclick="off()" class="confirm__button">CONFIRM</button>
+                     </a> 
+                  </div>
+              </div>
+          
+          
+          </div>
+             
+          
+          <button onclick="on()" class="rent__button" type="button"> RENT FOR 5.99$
+          </button>
           </div>
         </div>
       </div>

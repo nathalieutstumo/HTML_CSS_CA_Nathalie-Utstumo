@@ -1,0 +1,106 @@
+.what--user__main {
+  width: 100%;
+  height: 650px;
+  background-color: #dd9335;
+}
+
+.welcome--back__grid {
+  display: grid;
+  grid-template-rows: 25vh;
+  grid-template-columns: 20vh;
+  /* border: solid black 3px; */
+}
+
+.welcome--back__box {
+  width: 260px;
+  height: 50px;
+  background-color: white;
+  border-radius: 42px;
+  margin-top: 60px;
+  margin-left: 600px;
+}
+
+.welcome--back__text {
+  font-family: neuronAngeledXB;
+  font-size: 2rem;
+  margin-left: 35px;
+  margin-top: 5px;
+}
+
+.what--user__grid {
+  display: grid;
+  grid-template-rows: 20vh;
+  grid-template-columns: 20vh;
+  /* border: solid black 3px; */
+}
+
+.what--user__text {
+  width: 465px;
+  margin-left: 510px;
+  margin-top: -5px;
+}
+
+.first--half__text {
+  font-family: neuronAngeledXB;
+  font-size: 2.5rem;
+}
+
+.second--half__text {
+  font-family: neuronAngeledXL;
+  font-size: 2.5rem;
+  margin-left: 230px;
+  margin-top: -77px;
+}
+
+.watcher--creator__grid {
+  display: grid;
+  grid-template-rows: 15vh;
+  grid-template-columns: 20vh;
+  /* border: solid black 3px; */
+}
+
+.watcher__button {
+  width: 200px;
+  height: 50px;
+  border-radius: 42px;
+  border-color: transparent;
+  background-color: #b02519;
+  color: white;
+  font-family: neuronAngeledXB;
+  font-size: 1.5rem;
+  margin-left: 482px;
+  margin-top: 35px;
+}
+
+.watcher__button:hover {
+  background-color: #821b0f;
+  cursor: pointer;
+}
+
+.watcher__button a {
+  text-decoration: none;
+  color: white;
+}
+
+.creator__button {
+  width: 200px;
+  height: 50px;
+  border-radius: 42px;
+  border-color: transparent;
+  background-color: #b02519;
+  color: white;
+  font-family: neuronAngeledXB;
+  font-size: 1.5rem;
+  margin-left: 790px;
+  margin-top: -73px;
+}
+
+.creator__button:hover {
+  background-color: #821b0f;
+  cursor: pointer;
+}
+
+.creator__button a {
+  text-decoration: none;
+  color: white;
+}

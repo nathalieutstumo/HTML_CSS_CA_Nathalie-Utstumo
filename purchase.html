@@ -69,68 +69,72 @@
           </div>
         </div>
       </section>
+
+      
       <section class="grid__index3">
+
         <script src="js/purchase__overlay.js"></script>
 
-        <div id="purchase__overlay"> 
-        
-            <div class="purchase--overlay__box">
+<div id="purchase__overlay"> 
 
-              <div onclick="off()"  class="exit"><i class="fas fa-times-circle"></i></div>
-        
-                <h2 class="payment--first__text">PAYMENT</h2>
-                <h2 class="payment--second__text">INFORMATION</h2>
-        
-        <div class="payment__choices">
-            <button class="mastercard--icon__button">
-                <div class="mastercard__icon">
-                    <i class="fab fa-cc-mastercard"></i>
-                </div>
-            </button>
-                
-            
-        
-            <button class="paypal--icon__button">
-                <div class="paypal__icon">
-                    <i class="fab fa-cc-paypal"></i>
-                </div>
-            </button>
-                
-          
-        
-            <button class="visa--icon__button">
-                <div class="visa__icon">
-                    <i class="fab fa-cc-visa"></i>
-                </div>
-            </button>
-                
-           
+    <div class="purchase--overlay__box">
+      <div onclick="off()"  class="exit"><i class="fas fa-times-circle"></i></div>
+
+        <h2 class="payment--first__text">PAYMENT</h2>
+        <h2 class="payment--second__text">INFORMATION</h2>
+
+<div class="payment__choices">
+    <button class="mastercard--icon__button">
+        <div class="mastercard__icon">
+            <i class="fab fa-cc-mastercard"></i>
         </div>
+    </button>
         
-                <form action="submit.php" method="POST" id="checkout__form">
-        <input id="cardholdername" type="text" name="cardholdername" placeholder="CARDHOLDER NAME"/>
-        <input id="cardnumber" type="text" name="cardnumber" placeholder="CARD NUMBER"/>
-        <input id="expiredate" type="text" name="expiredate" placeholder="EXPIRE DATE"/>
-        <input id="cvv" type="text" name="cvv" placeholder="CVV">
-        
-                </form>
-        
-                <div class="rent--info__box">
-                    <h3 class="rent--info__movie">BEHIND YOU</h3>
-                    <h3 class="rent--movie__total">TOTAL</h3>
-                    <h3 class="rent--movie__price">5.99$</h3>
-                   <a href="/watcher__profile.html"> <button onclick="off()" class="confirm__button">CONFIRM</button>
-                     </a> 
-                </div>
-            </div>
-        
-        
+    
+
+    <button class="paypal--icon__button">
+        <div class="paypal__icon">
+            <i class="fab fa-cc-paypal"></i>
         </div>
+    </button>
         
-        <button onclick="on()" class="rent--now__button" type="button"> RENT NOW
-        </button>
+  
+
+    <button class="visa--icon__button">
+        <div class="visa__icon">
+            <i class="fab fa-cc-visa"></i>
+        </div>
+    </button>
         
+   
+</div>
+
+        <form action="submit.php" method="POST" id="checkout__form">
+<input id="cardholdername" type="text" name="cardholdername" placeholder="CARDHOLDER NAME"/>
+<input id="cardnumber" type="text" name="cardnumber" placeholder="CARD NUMBER"/>
+<input id="expiredate" type="text" name="expiredate" placeholder="EXPIRE DATE"/>
+<input id="cvv" type="text" name="cvv" placeholder="CVV">
+
+        </form>
+
+        <div class="rent--info__box">
+            <h3 class="rent--info__movie">BEHIND YOU</h3>
+            <h3 class="rent--movie__total">TOTAL</h3>
+            <h3 class="rent--movie__price">5.99$</h3>
+           <a href="/watcher__profile.html"> <button onclick="off()" class="confirm__button">CONFIRM</button>
+             </a> 
+        </div>
+    </div>
+
+
+</div>
+
+<button onclick="on()" class="rent--now__button" type="button"> RENT NOW
+</button>
+       
+
         <div class="film--suggestion--reel__flexbox">
+
           <div class="film--suggestion--reel__img"></div>
           <div class="play--icon__overlay__flexbox">
             <div class="play--icon__overlay">
@@ -139,6 +143,7 @@
               /></a>
             </div>
           </div>
+
         </div>
       </section>
     </main>

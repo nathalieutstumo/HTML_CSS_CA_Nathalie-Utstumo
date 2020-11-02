@@ -1,0 +1,33 @@
+.film__grid {
+  display: grid;
+  grid-template-rows: 110vh;
+  grid-template-columns: 170vh;
+  /* border: solid red 3px; */
+}
+
+.film__image {
+  margin-top: 50px;
+  margin-left: 320px;
+}
+
+.film--play__overlay {
+  z-index: 5px;
+  margin-top: -340px;
+  margin-left: 350px;
+}
+
+.hours--left__box {
+  width: 350px;
+  height: 60px;
+  background-color: white;
+  border-radius: 42px;
+  margin-top: -150px;
+  margin-left: 560px;
+}
+
+.hours--left__text {
+  font-family: neuronAngeledXL;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 13px;
+}

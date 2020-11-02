@@ -1,0 +1,230 @@
+main {
+  width: 100%;
+  height: 800px;
+  background-color: #666665;
+}
+
+.account__grid {
+  display: grid;
+  grid-template-rows: 95vh;
+  grid-template-columns: 100vh 100vh;
+  position: relative;
+}
+
+.login--box__grid {
+  display: grid;
+  grid-row: 1/1;
+  grid-column: 1/1;
+  position: relative;
+  /* border: black solid 3px; */
+  z-index: 30;
+  margin-left: 80px;
+}
+
+.create--user__grid {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/2;
+  position: relative;
+  /* border: black solid 3px; */
+  z-index: 32;
+  margin-left: 70px;
+}
+
+.login__head {
+  width: 250px;
+  height: 90px;
+  background-color: #dd9335;
+  border-radius: 42px;
+  margin-left: 175px;
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.login__box {
+  width: 425px;
+  height: 500px;
+  background-color: white;
+  margin-top: 95px;
+  margin-left: 85px;
+  border-radius: 42px;
+  position: absolute;
+}
+
+.login--head__text {
+  font-family: neuronAngeledXB;
+  font-size: 2.5rem;
+  margin-left: 80px;
+  margin-top: 22px;
+}
+
+.login__box input {
+  width: 300px;
+  height: 50px;
+  border-radius: 42px;
+  font-family: neuronAngeledXB;
+  color: #dd9335;
+  font-size: 1.3rem;
+  border-color: #dd9335;
+  border: solid 5px #dd9335;
+}
+
+.login__box input::placeholder {
+  color: #dd9335;
+}
+
+.confirm--login__button {
+  margin-left: 125px;
+  margin-top: 30px;
+}
+
+.confirm--login__button button {
+  width: 170px;
+  height: 50px;
+  border-radius: 42px;
+  border-color: transparent;
+  background-color: #dd9335;
+}
+
+.confirm--login__button a {
+  text-decoration: none;
+  color: white;
+  font-family: neuronAngeledXB;
+  font-size: 1.5rem;
+}
+
+.separation__line {
+  border: solid 1px #666665;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 107px;
+}
+
+.forgot__password {
+  font-family: neuronAngeledXB;
+  margin-left: 145px;
+  margin-top: 20px;
+}
+
+.forgot__password a {
+  text-decoration: none;
+  color: #dd9335;
+}
+
+.username__box {
+  margin-top: 140px;
+  margin-left: 60px;
+}
+
+.password__box {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.create--user__head {
+  width: 300px;
+  height: 90px;
+  background-color: #dd9335;
+  border-radius: 42px;
+  margin-left: 125px;
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.createuser--head__text {
+  font-family: neuronAngeledXB;
+  font-size: 2.5rem;
+  margin-left: 50px;
+  margin-top: 22px;
+}
+
+.create--user__box {
+  width: 425px;
+  height: 500px;
+  background-color: white;
+  margin-top: 95px;
+  margin-left: 60px;
+  border-radius: 42px;
+  position: absolute;
+}
+
+.name__box {
+  margin-top: 55px;
+  margin-left: 58px;
+  border-radius: 42px;
+  position: absolute;
+}
+
+.email__box {
+  margin-top: 140px;
+  margin-left: 58px;
+  border-radius: 42px;
+  position: absolute;
+}
+
+.create--password__box {
+  margin-top: 225px;
+  margin-left: 58px;
+  border-radius: 42px;
+  position: absolute;
+}
+
+.confirm--password__box {
+  margin-top: 310px;
+  margin-left: 58px;
+  border-radius: 42px;
+  position: absolute;
+}
+
+.create--user__box input {
+  width: 300px;
+  height: 50px;
+  border-radius: 42px;
+  font-family: neuronAngeledXB;
+  color: #dd9335;
+  font-size: 1.3rem;
+  border-color: #dd9335;
+  border: solid 5px #dd9335;
+}
+
+.create--user__box input::placeholder {
+  color: #dd9335;
+}
+
+.agree__checkbox {
+  margin-top: 380px;
+  margin-left: 50px;
+}
+
+.agree__checkbox input {
+  width: 25px;
+  background-color: #dd9335;
+}
+
+.checkbox__text {
+  font-size: 1.2rem;
+  font-family: neuronAngeledXB;
+  color: #dd9335;
+  margin-left: 40px;
+  margin-top: -40px;
+}
+
+.confirm--create__button {
+  margin-left: 125px;
+  margin-top: 20px;
+}
+
+.confirm--create__button button {
+  width: 170px;
+  height: 50px;
+  border-radius: 42px;
+  border-color: transparent;
+  background-color: #dd9335;
+}
+
+.confirm--create__button a {
+  text-decoration: none;
+  color: white;
+  font-family: neuronAngeledXB;
+  font-size: 1.5rem;
+}
