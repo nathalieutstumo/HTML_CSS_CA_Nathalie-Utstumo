@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+
+  <!-- HTML Meta Tags -->
+  <title>SquareEyes</title>
+  <meta name="description" content="">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://naughty-ramanujan-1c5562.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SquareEyes">
+  <meta property="og:description" content="">
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/en/6/6b/Hello_Web_Series_%28Wordmark%29_Logo.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="naughty-ramanujan-1c5562.netlify.app">
+  <meta property="twitter:url" content="https://naughty-ramanujan-1c5562.netlify.app/">
+  <meta name="twitter:title" content="SquareEyes">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image"
+    content="https://upload.wikimedia.org/wikipedia/en/6/6b/Hello_Web_Series_%28Wordmark%29_Logo.png">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+  <link rel="stylesheet" href="/styles/main.css" />
+  <title>SquareEyes</title>
+  <!-- Hotjar Tracking Code for https://naughty-ramanujan-1c5562.netlify.app -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2274852, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<!--body-->
+
+<body>
+  <!--header-->
+  <header class="grid__index1">
+    <div>
+      <a href="index.html">
+        <div class="logo"></div>
+      </a>
+      <div class="dropdown--menu__flexbox">
+        <div class="dropdown__menu">
+          <button class="dropbutton">
+            <i class="fas fa-chevron-circle-down" type="button">
+              <span>Menu</span></i>
+          </button>
+          <div class="dropdown__content">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="create__account.html"><i class="fas fa-user"></i></a>
+            <a href="library.html"><i class="fas fa-film"></i></a>
+            <a href="#"><i class="fas fa-share-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--main-->
+  <main class="main__index">
+    <section class="grid__index2">
+      <!--New Creators img, flexbox and text-->
+      <div class="img__flexbox">
+        <div class="new--creators__img"></div>
+        <div class="new--creators__text__flexbox">
+          <div class="new--creators__text">
+            <span class="text__new">New</span>
+            <span class="text__creators">creators</span>
+          </div>
+        </div>
+
+        <!--Popular Films img, flexbox and text-->
+        <div class="popular--films__img"></div>
+        <div class="popular--films__text__flexbox">
+          <div class="popular--films__text">
+            <span class="text__popular">Popular</span>
+            <span class="text__films">Films</span>
+          </div>
+        </div>
+
+        <!--Coming Soon img, flexbox and text-->
+        <div class="coming--soon__img"></div>
+        <div class="coming--soon__text__flexbox">
+          <div class="coming--soon_text">
+            <span class="text__coming">Coming</span>
+            <span class="text__soon">Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid__index3">
+      <script src="js/purchase__overlay.js"></script>
+
+      <div id="purchase__overlay">
+
+        <div class="purchase--overlay__box">
+
+          <div onclick="off()" class="exit"><i class="fas fa-times-circle"></i></div>
+
+          <h2 class="payment--first__text">PAYMENT</h2>
+          <h2 class="payment--second__text">INFORMATION</h2>
+
+          <div class="payment__choices">
+            <button class="mastercard--icon__button">
+              <div class="mastercard__icon">
+                <i class="fab fa-cc-mastercard"></i>
+              </div>
+            </button>
+
+
+
+            <button class="paypal--icon__button">
+              <div class="paypal__icon">
+                <i class="fab fa-cc-paypal"></i>
+              </div>
+            </button>
+
+
+
+            <button class="visa--icon__button">
+              <div class="visa__icon">
+                <i class="fab fa-cc-visa"></i>
+              </div>
+            </button>
+
+
+          </div>
+
+          <form action="submit.php" method="POST" id="checkout__form">
+            <input id="cardholdername" type="text" name="cardholdername" placeholder="CARDHOLDER NAME" />
+            <input id="cardnumber" type="text" name="cardnumber" placeholder="CARD NUMBER" />
+            <input id="expiredate" type="text" name="expiredate" placeholder="EXPIRE DATE" />
+            <input id="cvv" type="text" name="cvv" placeholder="CVV">
+
+          </form>
+
+          <div class="rent--info__box">
+            <h3 class="rent--info__movie">BEHIND YOU</h3>
+            <h3 class="rent--movie__total">TOTAL</h3>
+            <h3 class="rent--movie__price">5.99$</h3>
+            <a href="/watcher__profile.html"> <button onclick="off()" class="confirm__button">CONFIRM</button>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
+      <button onclick="on()" class="rent--now__button" type="button"> RENT NOW
+      </button>
+
+      <div class="film--suggestion--reel__flexbox">
+        <div class="film--suggestion--reel__img"></div>
+        <div class="play--icon__overlay__flexbox">
+          <div class="play--icon__overlay">
+            <a href="/healing_the_country.html">
+              <img src="../img/play_icon.png" alt="Play icon" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+
+  <!--footer-->
+  <footer class="grid__index4">
+    <section>
+      <div class="footer__logo"></div>
+    </section>
+    <div class="contact__us">
+      <span>CONTACT US</span>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Frequently Asked</a></li>
+        <li><a href="#">Work With Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="help">
+      <span>HELP</span>
+      <ul>
+        <li><a href="#">Payment</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">User</a></li>
+        <li><a href="#">Giftcard</a></li>
+      </ul>
+    </div>
+    <div class="footer__icons">
+      <li><a href="#"><i class="fab fa-facebook-square"></i> </a></li>
+      <li><a href="#"><i class="fab fa-instagram-square"></i> </a></li>
+      <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+
+
+    </div>
+  </footer>
+</body>
+
+</html>
