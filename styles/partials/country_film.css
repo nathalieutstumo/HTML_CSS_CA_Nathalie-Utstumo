@@ -144,3 +144,8 @@ main {
   background-color: #821b0f;
   cursor: pointer;
 }
+
+.card {
+  margin-top: -100px;
+  position: absolute;
+}

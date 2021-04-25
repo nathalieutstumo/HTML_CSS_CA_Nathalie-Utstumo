@@ -244,3 +244,17 @@ body {
   top: 150px;
   left: 255px;
 }
+
+.film--suggestion--reel__flexbox a {
+  margin-left: 195px;
+  text-decoration: none;
+  color: black;
+  margin-top: 375px;
+  font-size: 2rem;
+  font-family: "neuronAngeledXB";
+}
+
+.film--suggestion--reel__flexbox a:hover {
+  text-decoration: underline;
+  color: grey;
+}

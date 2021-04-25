@@ -1,168 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-    crossorigin="anonymous"
-  />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
   <link rel="stylesheet" href="/styles/main.css" />
-    <title>SquareEyes</title>
-  </head>
-  <!--body-->
-  <body>
-    <!--header-->
-    <header class="grid__index1">
-      <div>
-        <a href="index.html"><div class="logo"></div> </a>
-        
-        <div class="dropdown--menu__flexbox">
-          <div class="dropdown__menu">
-            <button class="dropbutton">
-              <i class="fas fa-chevron-circle-down" type="button">
-                <span>Menu</span></i
-              >
-            </button>
-            <div class="dropdown__content">
-              <a href="search.html"><i class="fas fa-search"></i></a>
-              <a href="create__account.html"><i class="fas fa-user"></i></a>
-              <a href="library.html"><i class="fas fa-film"></i></a>
-              <a href="#"><i class="fas fa-share-square"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--main-->
-    <main>
-      <div class="country--main__grid">
-        <div class="video--image__grid">
-          <div class="video__image">
-            <div class="play__overlay">
-              <a href="film.html"> <img src="img/play_icon.png" alt="Play icon"></a>
-            </div>
-          </div>
-        </div>
-        <script src="js/purchase__overlay.js"></script>
+  <title>SquareEyes</title>
+</head>
+<!--body-->
 
-        <div class="film--info__grid">
-          <div class="film--info__box">
-            <div class="film--info__text">
-              <h2 class="first__text">HEALING THE</h2>
-              <h2 class="second__text">COUNTRY</h2>
-              <h3 class="creator">CREATOR :</h3>
-              <h3 class="creator__name">Matthew Sommer</h3>
-              <h3 class="genre">GENRE :</h3>
-              <h3 class="genre__text">War-Films</h3>
-              <h3 class="about">ABOUT :</h3>
-              <h3 class="about__text"> 
-              Peaceful farmer, </h3>
-                <h3 class="about__text2">Stephen Newell, is driven to lead the 
-                  <br> colonial militia during 
-                  the American <br> revolution when 
-                  a sadistic British <br> officer 
-                  murders his son.</h3>
-            </div>
+<body>
+  <!--header-->
+  <header class="grid__index1">
+    <div>
+      <a href="index.html">
+        <div class="logo"></div>
+      </a>
 
-            <!--overlay-->
-             
-             <div id="purchase__overlay"> 
-
-              <div class="purchase--overlay__box">
-
-                <div onclick="off()" class="exit"><i class="fas fa-times-circle"></i></div>
-          
-                  <h2 class="payment--first__text">PAYMENT</h2>
-                  <h2 class="payment--second__text">INFORMATION</h2>
-          
-          <div class="payment__choices">
-              <button class="mastercard--icon__button">
-                  <div class="mastercard__icon">
-                      <i class="fab fa-cc-mastercard"></i>
-                  </div>
-              </button>
-                  
-              
-          
-              <button class="paypal--icon__button">
-                  <div class="paypal__icon">
-                      <i class="fab fa-cc-paypal"></i>
-                  </div>
-              </button>
-                  
-            
-          
-              <button class="visa--icon__button">
-                  <div class="visa__icon">
-                      <i class="fab fa-cc-visa"></i>
-                  </div>
-              </button>
-                  
-             
-          </div>
-          
-                  <form action="submit.php" method="POST" id="checkout__form">
-          <input id="cardholdername" type="text" name="cardholdername" placeholder="CARDHOLDER NAME"/>
-          <input id="cardnumber" type="text" name="cardnumber" placeholder="CARD NUMBER"/>
-          <input id="expiredate" type="text" name="expiredate" placeholder="EXPIRE DATE"/>
-          <input id="cvv" type="text" name="cvv" placeholder="CVV">
-          
-                  </form>
-          
-                  <div class="rent--info__box">
-                      <h3 class="rent--info__movie">BEHIND YOU</h3>
-                      <h3 class="rent--movie__total">TOTAL</h3>
-                      <h3 class="rent--movie__price">5.99$</h3>
-                     <a href="/watcher__profile.html"> <button onclick="off()" class="confirm__button">CONFIRM</button>
-                     </a> 
-                  </div>
-              </div>
-          
-          
-          </div>
-             
-          
-          <button onclick="on()" class="rent__button" type="button"> RENT FOR 5.99$
+      <div class="dropdown--menu__flexbox">
+        <div class="dropdown__menu">
+          <button class="dropbutton">
+            <i class="fas fa-chevron-circle-down" type="button">
+              <span>Menu</span></i>
           </button>
+          <div class="dropdown__content">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="create__account.html"><i class="fas fa-user"></i></a>
+            <a href="library.html"><i class="fas fa-film"></i></a>
+            <a href="#"><i class="fas fa-share-square"></i></a>
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <section>
-        <div class="footer__logo"></div>
-      </section>
-      <div class="contact__us">
-        <span>CONTACT US</span>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Frequently Asked</a></li>
-          <li><a href="#">Work With Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
+    </div>
+  </header>
+  <!--main-->
+  <main>
+
+
+
+    <!--overlay-->
+
+    <div id="purchase__overlay">
+
+      <div class="purchase--overlay__box">
+
+        <div onclick="off()" class="exit"><i class="fas fa-times-circle"></i></div>
+
+        <h2 class="payment--first__text">PAYMENT</h2>
+        <h2 class="payment--second__text">INFORMATION</h2>
+
+        <div class="payment__choices">
+          <button class="mastercard--icon__button">
+            <div class="mastercard__icon">
+              <i class="fab fa-cc-mastercard"></i>
+            </div>
+          </button>
+
+
+
+          <button class="paypal--icon__button">
+            <div class="paypal__icon">
+              <i class="fab fa-cc-paypal"></i>
+            </div>
+          </button>
+
+
+
+          <button class="visa--icon__button">
+            <div class="visa__icon">
+              <i class="fab fa-cc-visa"></i>
+            </div>
+          </button>
+
+
+        </div>
+
+        <form action="submit.php" method="POST" id="checkout__form">
+          <input id="cardholdername" type="text" name="cardholdername" placeholder="CARDHOLDER NAME" />
+          <input id="cardnumber" type="text" name="cardnumber" placeholder="CARD NUMBER" />
+          <input id="expiredate" type="text" name="expiredate" placeholder="EXPIRE DATE" />
+          <input id="cvv" type="text" name="cvv" placeholder="CVV">
+
+        </form>
+
+        <div class="rent--info__box">
+          <h3 class="rent--info__movie">BEHIND YOU</h3>
+          <h3 class="rent--movie__total">TOTAL</h3>
+          <h3 class="rent--movie__price">5.99$</h3>
+          <a href="/watcher__profile.html"> <button onclick="off()" class="confirm__button">CONFIRM</button>
+          </a>
+        </div>
       </div>
-      <div class="help">
-        <span>HELP</span>
-        <ul>
-          <li><a href="#">Payment</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">User</a></li>
-          <li><a href="#">Giftcard</a></li>
-        </ul>
-      </div>
-      <div class="footer__icons">
-        <li><a href="#"><i class="fab fa-facebook-square"></i> </a></li>
-        <li><a href="#"><i class="fab fa-instagram-square"></i> </a></li>
-        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-        
-        
-      </div>
- 
-    </footer>
-  </body>
+
+
+    </div>
+
+
+    <button onclick="on()" class="rent__button" type="button"> RENT FOR 5.99$
+    </button>
+    </div>
+    </div>
+    </div>
+  </main>
+  <script src="js/components/alert.js"></script>
+  <script src="js/details.js"></script>
+  <footer>
+    <section>
+      <div class="footer__logo"></div>
+    </section>
+    <div class="contact__us">
+      <span>CONTACT US</span>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Frequently Asked</a></li>
+        <li><a href="#">Work With Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="help">
+      <span>HELP</span>
+      <ul>
+        <li><a href="#">Payment</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">User</a></li>
+        <li><a href="#">Giftcard</a></li>
+      </ul>
+    </div>
+    <div class="footer__icons">
+      <li><a href="#"><i class="fab fa-facebook-square"></i> </a></li>
+      <li><a href="#"><i class="fab fa-instagram-square"></i> </a></li>
+      <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+
+
+    </div>
+
+  </footer>
+</body>
+
 </html>

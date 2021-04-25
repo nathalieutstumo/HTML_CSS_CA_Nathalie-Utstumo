@@ -1,9 +1,9 @@
 
 async function getFilms() {
     try {
-        const response = await fetch('https://api.ntoni.tech/wp-json/wc/store/products/342');
+        const response = await fetch('https://api.ntoni.tech/wp-json/wc/store/products/');
         const jsonObject = await response.json();
-        console.log(jsonObject);
+        // console.log(jsonObject);
         const jsonArray = jsonObject.images;
         console.log('Something', jsonArray)
 
@@ -12,10 +12,12 @@ async function getFilms() {
 
         for (let i = 0; i < jsonArray.length; i++) {
 
-            document.querySelector('.film--suggestion--reel__flexbox').innerHTML += `
-	    <div class="film--suggestion--reel__img">
-            <img class ="countryimg" src="${jsonArray[i].scr}">
-            <a href="healing_the_country.html?id=${jsonArray[i].id}">Read More</a>
+            document.querySelector('main').innerHTML += `
+	    <div class="card">
+            <img class ="filmImg" src="${jsonArray[i].src}">
+            <h2>${jsonArray[i].name}</h2>
+            <p>${jsonArray[i].short_description}</p>
+            <a href="details.html?id=${jsonArray[i].id}">Read more</a>
 	    </div>
 	`;
         }
